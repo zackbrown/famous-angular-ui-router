@@ -20,7 +20,9 @@
   </head>
   <body>
 
-    <div ui-view></div>
+    <fa-app class="full-screen">
+      <ui-view fa-animate-leave="leave($done)" fa-animate-enter="enter($done)"></ui-view>
+    </fa-app>
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -38,6 +40,7 @@
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/famousAngularStarter.js"></script>
     <script src="scripts/main/main-ctrl.js"></script>
+    <script src="scripts/main/test-ctrl.js"></script>
     <!-- inject:partials -->
     <!-- endinject -->
     <!-- endbuild -->

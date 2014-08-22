@@ -1,16 +1,16 @@
 <fa-view>
   <!-- Container modifier, which we're rotating over the y axis -->
-  <fa-modifier fa-translate="[0, translateY.get(), 200]" fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()" fa-transform-order="['translate', 'rotateY']">
+  <fa-modifier fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()" fa-translate="[0,0,200]" fa-rotate-z="rotateZ.get()" fa-opacity="opacity.get()" fa-transform-order="['translate', 'rotateY', 'rotateZ']">
 
     <!-- Front face -->
     <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
-      <a href="/#/test"><img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" /></a>
+      <a href="/"><img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" /></a>
     </fa-surface>
 
     <!-- Back face:  same image, rotated pi radians -->
     <fa-modifier fa-rotate-y="3.14159">
       <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
-        <a href="/#/test"><img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" /></a>
+        <a href="/"><img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" /></a>
       </fa-surface>
     </fa-modifier>
 

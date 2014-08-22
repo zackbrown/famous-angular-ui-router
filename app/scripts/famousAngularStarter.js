@@ -12,10 +12,10 @@ angular.module('famousAngularStarter',
         templateUrl: 'partials/main.html',
         controller: 'MainCtrl'
       })
-      .state('jade', {
-        url: '/jade',
-        templateUrl: 'partials/jade.html',
-        controller: 'MainCtrl'
+      .state('test', {
+        url: '/test',
+        templateUrl: 'partials/test.html',
+        controller: 'TestCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
